@@ -42,9 +42,9 @@ a.btn_down{
     text-decoration: none;
     color: #fff;
     position: absolute;
-    bottom: 20px;
+    top: 92%;
     left: 95.5%;
-    font-size: 40px;
+    font-size: 250%;
     border: 2px solid;
     border-radius: 60px;
     height: 60px;
@@ -414,7 +414,7 @@ a.btn_down:hover{
 .el:nth-child(1) .el__bg:before {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
-    background-image: url("resources/forest_trees_trail_140290_3840x2160.jpg");
+    background-image: url("resources/100295.jpg");
 }
 .el:nth-child(2) {
     -webkit-transform: translate3d(105.2083333333%, 0, 0);
@@ -554,19 +554,4 @@ a.btn_down:hover{
     transition-delay: 0.6s;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-.icon-link {
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
-    width: 32px;
-}
-.icon-link img {
-    width: 100%;
-    vertical-align: top;
-}
-.icon-link--twitter {
-    left: auto;
-    right: 5px;
 }
