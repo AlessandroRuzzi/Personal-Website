@@ -54,11 +54,11 @@
 }
 
 .ms--images .ms-slide:nth-child(1) .ms-slide__image {
-    background-image: url("../portfolio-carousel/img/harvey-gibson-498362-unsplash.jpg");
+    background-image: url("resources/copertina.jpg");
 }
 
 .ms--images .ms-slide:nth-child(2) .ms-slide__image {
-    background-image: url("../portfolio-carousel/img/andre-hunter-461305-unsplash.jpg");
+    background-image: url("resources/seasons-spring-summer-winter-wallpaper-preview.jpg");
 }
 
 .ms--images .ms-slide:nth-child(3) .ms-slide__image {
@@ -436,6 +436,7 @@ a {
 }
 
 .header__logo {
+    font-family: Helvetica;
     font-size: 2.3em;
     font-weight: 900;
     letter-spacing: -1px;
