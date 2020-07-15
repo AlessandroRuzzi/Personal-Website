@@ -1,6 +1,20 @@
 (function() {
 
     var slidersContainer = document.querySelector('.sliders-container');
+    var links  = [
+        'https://github.com/alexruzzi98/Software-Engineering-Project',
+        'https://github.com/alexruzzi98/Weather-APP',
+        'https://github.com/alexruzzi98/API',
+        'https://github.com/alexruzzi98/Robotics-Projects'
+    ]
+
+    var $butn1 = '<a href="https://github.com/alexruzzi98/Software-Engineering-Project" class="ms-slide__link" + i>See Code</a>';
+    var $butn2 = '<a href="https://github.com/alexruzzi98/Weather-APP" class="ms-slide__link" + i>See Code</a>';
+    var $butn3 = '<a href="https://github.com/alexruzzi98/API" class="ms-slide__link" + i>See Code</a>';
+    var $butn4 = '<a href="https://github.com/alexruzzi98/Robotics-Projects" class="ms-slide__link" + i>See Code</a>';
+
+    var $buttons = [$butn1,$butn2,$butn3,$butn4];
+
 
     // Initializing the numbers slider
     var msNumbers = new MomentumSlider({
@@ -21,8 +35,8 @@
     var titles = [
         'Santorini Game',
         'Weather App',
-        'Urban Fashion',
-        'Windy Sunset'
+        'Social Network Like',
+        'Robotics Project'
     ];
     var msTitles = new MomentumSlider({
         el: slidersContainer,
@@ -44,12 +58,18 @@
         el: slidersContainer,
         cssClass: 'ms--links',
         range: [0, 3],
-        rangeContent: function () {
-            return '<a class="ms-slide__link">View Case</a>';
+        rangeContent: function (i) {
+
+            return $buttons[i];
+
         },
         vertical: true,
         interactive: false
     });
+
+
+
+
 
     // Get pagination items
     var pagination = document.querySelector('.pagination');

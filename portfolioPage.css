@@ -14,7 +14,6 @@
 }
 
 .ms--images.ms-container--horizontal .ms-slide {
-    display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
 }
@@ -54,19 +53,19 @@
 }
 
 .ms--images .ms-slide:nth-child(1) .ms-slide__image {
-    background-image: url("resources/copertina.jpg");
+    background-image: url("resources/santorini.jpg");
 }
 
 .ms--images .ms-slide:nth-child(2) .ms-slide__image {
-    background-image: url("resources/seasons-spring-summer-winter-wallpaper-preview.jpg");
+    background-image: url("resources/weather_app.jpg");
 }
 
 .ms--images .ms-slide:nth-child(3) .ms-slide__image {
-    background-image: url("../portfolio-carousel/img/joanna-nix-389128-unsplash.jpg");
+    background-image: url("resources/api_project.jpg");
 }
 
 .ms--images .ms-slide:nth-child(4) .ms-slide__image {
-    background-image: url("../portfolio-carousel/img/jurica-koletic-321003-unsplash.jpg");
+    background-image: url("resources/robotics_project.jpg");
 }
 
 .ms--images .ms-slide__image-container {
@@ -98,7 +97,6 @@
 }
 
 .ms--numbers.ms-container--horizontal .ms-slide {
-    display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
 }
@@ -329,12 +327,12 @@
 
 .pagination__button:before {
     height: 2px;
-    background-color: #6A3836;
+    background-color: #c1771d;
 }
 
 .pagination__button:after {
     height: 3px;
-    background-color: #DC4540;
+    background-color: #ffffff;
     opacity: 0;
     -webkit-transition: 0.5s opacity;
     -o-transition: 0.5s opacity;
@@ -499,6 +497,17 @@ a {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+}
+
+.copyright-text {
+    font-family: Helvetica;
+    position: fixed;
+    top: 95%;
+    left: 79%;
+    color:#aaaaaa;
+    font-weight: 200;
+    font-size: 100%;
+    opacity: 1;
 }
 
 @media screen and (max-width: 860px) {
