@@ -10,17 +10,6 @@ setTimeout(function() {
 
 var $intcount = 0;
 
-$elsArr.forEach(function($el) {
-    $intcount +=1;
-    if($intcount <= 1 || $intcount >=5)
-        return;
-    $el.addEventListener('click', function() {
-        if (this.classList.contains('s--active')) return;
-        $cont.classList.add('s--el-active');
-        this.classList.add('s--active');
-    });
-});
-
 $closeBtnsArr.forEach(function($btn) {
     $btn.addEventListener('click', function(e) {
         e.stopPropagation();
