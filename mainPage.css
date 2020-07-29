@@ -72,7 +72,7 @@ a {
     padding-right:0px;
     position: absolute;
     top: 2.1%;
-    right: -30%;
+    right: -23%;
     transition: .5s;
 }
 
@@ -81,7 +81,7 @@ a {
     display:inline-block;
     padding: 10px 50px;
     color: white;
-    font-size: 175%;
+    font-size: 28px;
     font-family: Helvetica;
     cursor: pointer;
     border-radius:10px;
