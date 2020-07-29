@@ -388,6 +388,11 @@ body {
     color: white;
     background-color: #1B1C21;
     overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
 }
 
 a {
@@ -397,6 +402,7 @@ a {
 }
 
 .container {
+
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -509,6 +515,7 @@ a {
     font-size: 100%;
     opacity: 1;
 }
+
 
 @media screen and (max-width: 860px) {
     .header__menu, .footer {
