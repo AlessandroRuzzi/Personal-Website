@@ -93,7 +93,7 @@ a {
 .copyright-text {
     font-family: Helvetica;
     position: fixed;
-    top: 97%;
+    top: 95%;
     left: 79%;
     color:#aaaaaa;
     font-weight: 200;
@@ -103,8 +103,8 @@ a {
 
 #box{
     position: absolute;
-    top: 10%;
-    left: 12%;
+    top: 11.5%;
+    left: 12.5%;
     align-items: center;
     width:75%;
     height:70%;
