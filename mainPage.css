@@ -69,9 +69,10 @@ a {
 .topnav{
     width: 100%;
     padding: 20px;
-    position: absolute;
-    top: 2.1%;
-    right: -23%;
+    padding-right:0px;
+    position: relative;
+    top: -4.5%;
+    right: -32%;
     transition: .5s;
 }
 
