@@ -650,9 +650,29 @@ a.btn_down:hover{
     transform: scale(1.1);
 }
 
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer__menu__link {
+    margin-left: 50px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
 .copyright-text {
+    font-family: Helvetica;
     position: fixed;
-    top: 97%;
+    top: 96.5%;
     left: 79%;
     color:#aaaaaa;
     font-weight: 200;

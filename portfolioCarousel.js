@@ -8,10 +8,10 @@
         'https://github.com/alexruzzi98/Robotics-Projects'
     ]
 
-    var $butn1 = '<a href="https://github.com/alexruzzi98/Software-Engineering-Project" class="ms-slide__link" + i>See Code</a>';
-    var $butn2 = '<a href="https://github.com/alexruzzi98/Weather-APP" class="ms-slide__link" + i>See Code</a>';
-    var $butn3 = '<a href="https://github.com/alexruzzi98/API" class="ms-slide__link" + i>See Code</a>';
-    var $butn4 = '<a href="https://github.com/alexruzzi98/Robotics-Projects" class="ms-slide__link" + i>See Code</a>';
+    var $butn1 = '<a href="https://github.com/alexruzzi98/Software-Engineering-Project" target="_blank"  class="ms-slide__link" + i>See Code</a>';
+    var $butn2 = '<a href="https://github.com/alexruzzi98/Weather-APP" target="_blank" class="ms-slide__link" + i>See Code</a>';
+    var $butn3 = '<a href="https://github.com/alexruzzi98/API" target="_blank" class="ms-slide__link" + i>See Code</a>';
+    var $butn4 = '<a href="https://github.com/alexruzzi98/Robotics-Projects" target="_blank" class="ms-slide__link" + i>See Code</a>';
 
     var $buttons = [$butn1,$butn2,$butn3,$butn4];
 
