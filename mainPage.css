@@ -70,9 +70,9 @@ a {
     width: 100%;
     padding: 20px;
     padding-right:0px;
-    position: relative;
-    top: -4.5%;
-    right: -32%;
+    position: absolute;
+    top: 2.1%;
+    right: -30%;
     transition: .5s;
 }
 
@@ -81,7 +81,7 @@ a {
     display:inline-block;
     padding: 10px 50px;
     color: white;
-    font-size: 28px;
+    font-size: 175%;
     font-family: Helvetica;
     cursor: pointer;
     border-radius:10px;
@@ -654,7 +654,7 @@ a.btn_down:hover{
     position: fixed;
     top: 97%;
     left: 79%;
-    color:#aaaaaa;;
+    color:#aaaaaa;
     font-weight: 200;
     font-size: 100%;
     opacity: 1;
