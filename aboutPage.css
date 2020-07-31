@@ -231,3 +231,23 @@ a {
     font-family: Helvetica;
     font-size: 120%;
 }
+
+#horiz-line{
+    position: absolute;
+    top: 66%;
+    left: 42%;
+    height: 1px;
+    width: 42%;
+    display: flex;
+    background-color: dodgerblue;
+}
+
+#verticle-line{
+    position: absolute;
+    top: 17%;
+    left: 43%;
+    height:51%;
+    width:  1px;
+    display: flex;
+    background-color: dodgerblue;
+}
