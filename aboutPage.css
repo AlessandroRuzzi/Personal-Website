@@ -229,15 +229,15 @@ a {
     top: 20%;
     left: 28%;
     font-family: Helvetica;
-    font-size: 120%;
+    font-size: 100%;
 }
 
 #horiz-line{
     position: absolute;
     top: 66%;
-    left: 42%;
+    left: 45%;
     height: 1px;
-    width: 42%;
+    width: 38%;
     display: flex;
     background-color: dodgerblue;
 }
@@ -245,7 +245,7 @@ a {
 #verticle-line{
     position: absolute;
     top: 17%;
-    left: 43%;
+    left: 46%;
     height:51%;
     width:  1px;
     display: flex;
