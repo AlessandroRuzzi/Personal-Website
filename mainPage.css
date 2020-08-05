@@ -65,8 +65,11 @@ a {
 }
 
 .navbarr ul li:hover{
+
     background: #c1771d;
+
 }
+
 .navbarr ul li.list {
     position: fixed;
     top:3%;
@@ -75,7 +78,7 @@ a {
     display: none;}
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1650px) {
     .navbarr ul.topnav li {display: none;}
     .navbarr ul.topnav li.list {
         float: right;
@@ -84,22 +87,50 @@ a {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:1350px) {
-    .navbarr ul.topnav.responsive {position: relative;}
+@media screen and (max-width:1650px) {
     .navbarr ul.topnav.responsive li.list{
         position: fixed;
+        padding: 10px 30px;
         top:3%;
-        right: 0;
+        right:92px;
     }
+
+
+
+    body{
+        overflow: hidden;
+    }
+
     .navbarr ul.topnav.responsive li {
+        font-size: 3.5vh;
         float: none;
-        display: list-item;
+        display:flex;
     }
     .navbarr ul.topnav.responsive li a {
         display: block;
         text-align: right;
     }
+
+    .row-sm-1.bottom-left-text{
+        display: none;
+    }
+
+    .navbarr ul.topnav{
+        position: fixed;
+        top: 10%;
+        right:0;
+    }
+
+    .btn_down{
+        display: none;
+    }
+
+    .cont__inner{
+        display: none;
+    }
 }
+
+
 
 
 .box{
