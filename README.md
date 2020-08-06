@@ -3,6 +3,7 @@
 ### To Do List:
 
 - [ ] Responsive Design home page,insert something in the middle of the screen
+- [ ] better graphics for side menu
 - [ ] Responsive Design portfolio
 - [ ] Responsive Design About
 - [ ] Responsive Design Contact
