@@ -713,7 +713,7 @@ a.btn_down:hover{
     #typed-resp{
         position: fixed;
         top: 50%;
-        left:25%;
+        left:27%;
         display: inline-flex;
         color: #E5E9EC ;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -764,7 +764,7 @@ a.btn_down:hover{
 }
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:1200px) and (max-height:1100px)  and (min-width:400px) and (min-height:700px) {
+@media screen and (max-width:1200px) and (max-height:1100px)  and (min-width:400px) and (min-height:900px) {
     .navbarr ul.topnav li {display: none;}
     .navbarr ul.topnav li.list {
         float: right;
@@ -775,7 +775,7 @@ a.btn_down:hover{
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:1200px) and (max-height:1100px) and (min-width:400px) and (min-height:700px)  {
+@media screen and (max-width:1200px) and (max-height:1100px) and (min-width:400px) and (min-height:900px)  {
     .navbarr ul.topnav.responsive li.list{
         position: fixed;
         padding: 10px 30px;
@@ -789,7 +789,7 @@ a.btn_down:hover{
     #sidebar{
         position: fixed;
         top: 0;
-        width: 23vh;
+        width: 19.3vh;
         height: 100%;
         background:#151719;
         opacity: 0.75;
@@ -827,7 +827,7 @@ a.btn_down:hover{
     }
 
     .navbarr ul.topnav.responsive li {
-        font-size: 2.5vh;
+        font-size: 2.2vh;
         float: none;
         display:flex;
     }
@@ -844,7 +844,106 @@ a.btn_down:hover{
     #typed-resp{
         position: fixed;
         top: 50%;
-        left:40%;
+        left:37%;
+    }
+
+    .navbarr ul.topnav{
+        position: fixed;
+        top: 10%;
+        right:0;
+    }
+
+    .btn_down{
+        display: none;
+    }
+
+    .cont__inner{
+        display: none;
+    }
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:1200px) and (max-height:900px)  and (min-width:400px) and (min-height:700px) {
+    .navbarr ul.topnav li {display: none;}
+    .navbarr ul.topnav li.list {
+        float: right;
+        display: inline-block;
+    }
+
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:1200px) and (max-height:900px)  and (min-width:400px) and (min-height:700px)   {
+    .navbarr ul.topnav.responsive li.list{
+        position: fixed;
+        padding: 10px 30px;
+        top:2.5%;
+        right:92px;
+    }
+
+    body{
+        overflow: hidden;
+    }
+    #sidebar{
+        position: fixed;
+        top: 0;
+        width: 19.3vh;
+        height: 100%;
+        background:#151719;
+        opacity: 0.75;
+        right: -400px;
+        border-radius:10px;
+    }
+
+    #sidebar.active{
+        transition:0.3s;
+        right: 0;
+    }
+
+
+    #typed-resp{
+        position: fixed;
+        top: 50%;
+        left:25%;
+        display: inline-flex;
+        color: #E5E9EC ;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        letter-spacing: 1.5px ;
+        font-weight: 200 ;
+        font-size: 2.3vh;
+        word-spacing: 1px;
+        opacity: 1;
+    }
+
+
+    .row-sm-1 .left-text-style{
+        display: none;
+    }
+
+    .copyright-text .paragraph-text{
+        font-size: 1.5vh;
+    }
+
+    .navbarr ul.topnav.responsive li {
+        font-size: 2.2vh;
+        float: none;
+        display:flex;
+    }
+
+    .navbarr ul.topnav.responsive li a {
+        display: block;
+        text-align: right;
+    }
+
+    #typed-strings{
+        font-size: 2.0vh;
+    }
+
+    #typed-resp{
+        position: fixed;
+        top: 50%;
+        left:37%;
     }
 
     .navbarr ul.topnav{
