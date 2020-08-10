@@ -21,8 +21,20 @@
 <link rel="icon" type="image/png" href="resources/page_icon.png">
 
 <div class="top-container text-center padding-0 center-block">
+    <div class="row-sm-1-resp bottom-left-text">
+        <span id="typed-resp" class="left-text-style"></span>
+    </div>
+    <footer class="footer">
+        <div class="copyright-text">
+            <p class="paragraph-text text-style text-right copyright-text">© 2020 Alessandro Ruzzi All Rights Reserved</p>
+        </div>
+    </footer>
 
-    <div class="navbarr">
+
+
+    <div class="navbarr" id="navbarr">
+
+        <div id="sidebar">
 
         <ul class="topnav">
             <li><a href="portfolioPage.html">Portfolio</a></li>
@@ -34,6 +46,7 @@
                 <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
             </li>
         </ul>
+        </div>
 
     </div>
     <a href="#content" class="btn_down"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
@@ -43,14 +56,8 @@
     <div class="row-sm-1 bottom-left-text">
         <span id="typed" class="left-text-style"></span>
     </div>
-    <div class="row-sm-1-resp bottom-left-text">
-        <span id="typed-resp" class="left-text-style"></span>
-    </div>
-    <footer class="footer">
-        <div class="copyright-text">
-            <p class="paragraph-text text-style text-right copyright-text">© 2020 Alessandro Ruzzi All Rights Reserved</p>
-        </div>
-    </footer>
+
+
     <script>
         var typed = new Typed('#typed', {
             strings: ['I get emotional when CS meets Neuroscience.', 'I believe AI will deeply change the world.', 'I love to work on meaningful tech problems.'],
@@ -61,6 +68,7 @@
             loop: true,
         });
     </script>
+
     <script>
         var typed = new Typed('#typed-resp', {
             strings: ['Software Engineer','Future ML engineer'],
@@ -71,6 +79,7 @@
             loop: true,
         });
     </script>
+
 </div>
 <section class="cont s--inactive">
     <!-- cont inner start -->
@@ -198,6 +207,7 @@
 <script>
     function myFunction() {
         document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+        document.getElementById("sidebar").classList.toggle('active')
     }
 </script>
 </html>

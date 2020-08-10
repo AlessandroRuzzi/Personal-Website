@@ -367,11 +367,18 @@
 
 @media screen and (max-width: 600px) {
     .ms--images {
-        overflow: visible;
+        overflow: hidden;
     }
 }
 
 @media screen and (max-width: 400px) {
+
+    .ms--images .ms-slide{
+        width: 0px;
+        height: 300px;
+    }
+
+
     .ms--titles .ms-slide {
         -webkit-transform: scale(0.8);
         -ms-transform: scale(0.8);
@@ -441,7 +448,10 @@ a {
 
 .header__logo {
     font-family: Helvetica;
-    font-size: 2.3em;
+    position: fixed;
+    top: 28px;
+    left:22px;
+    font-size: 3.5vh;
     font-weight: 900;
     letter-spacing: -1px;
 }
@@ -508,17 +518,20 @@ a {
 .copyright-text {
     font-family: Helvetica;
     position: fixed;
-    top: 95%;
-    left: 79%;
+    bottom: 0px;
+    right: 25px;
     color:#aaaaaa;
     font-weight: 200;
-    font-size: 100%;
+    font-size: 1.3vh;
     opacity: 1;
 }
 
 
-@media screen and (max-width: 860px) {
-    .header__menu, .footer {
-        display: none;
+@media screen and (max-width:800px) {
+
+    .copyright-text .paragraph-text{
+        font-size: 2.0vh;
     }
+
+
 }

@@ -41,13 +41,12 @@ a {
     cursor: pointer;
 }
 
-
 .navbarr{
     width: 100%;
     padding: 20px;
     padding-right:0px;
     position: absolute;
-    top: 2.3%;
+    top: 24px;
     right: 0;
     transition: .5s;
 }
@@ -57,7 +56,7 @@ a {
     display:inline-block;
     padding: 10px 50px;
     color: white;
-    font-size: 28px;
+    font-size: 2vh;
     font-family: Helvetica;
     cursor: pointer;
     border-radius:10px;
@@ -72,8 +71,9 @@ a {
 
 .navbarr ul li.list {
     position: fixed;
-    top:2.5%;
+    top:2.2%;
     right: 0;
+    font-size: 28px;
     text-align: right;
     display: none;
 }
@@ -101,6 +101,21 @@ a {
     body{
         overflow: hidden;
     }
+    #sidebar{
+        position: fixed;
+        top: 0;
+        width: 28vh;
+        height: 100%;
+        background:#151719;
+        opacity: 0.75;
+        right: -400px;
+        border-radius:10px;
+    }
+
+    #sidebar.active{
+        transition:0.3s;
+        right: 0;
+    }
 
 
     #typed-resp{
@@ -114,6 +129,7 @@ a {
         font-weight: 200 ;
         font-size: 2.3vh;
         word-spacing: 1px;
+        opacity: 1;
     }
 
 
@@ -168,10 +184,10 @@ a {
 
 .header__logo {
     font-family: Helvetica;
-    position: absolute;
-    top: 3.5%;
-    left:2%;
-    font-size: 2.3em;
+    position: fixed;
+    top: 28px;
+    left:22px;
+    font-size: 3.5vh;
     font-weight: 900;
     letter-spacing: -1px;
 }

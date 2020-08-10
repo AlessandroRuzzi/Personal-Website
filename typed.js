@@ -739,6 +739,7 @@
                     }, {
                         key: 'appendAnimationCss',
                         value: function appendAnimationCss(self) {
+                            self.showCursor = false;
                             if (!self.autoInsertCss) {
                                 return;
                             }
@@ -749,8 +750,9 @@
                             var css = document.createElement('style');
                             css.type = 'text/css';
                             var innerCss = '';
+
                             if (self.showCursor) {
-                                innerCss += '\n        .typed-cursor{\n          opacity: 1;\n          animation: typedjsBlink 0.7s infinite;\n          -webkit-animation: typedjsBlink 0.7s infinite;\n                  animation: typedjsBlink 0.7s infinite;\n        }\n        @keyframes typedjsBlink{\n          50% { opacity: 0.0; }\n        }\n        @-webkit-keyframes typedjsBlink{\n          0% { opacity: 1; }\n          50% { opacity: 0.0; }\n          100% { opacity: 1; }\n        }\n      ';
+                                innerCss += '\n        .typed-cursor{\n      opacity: 1;\n          animation: typedjsBlink 0.7s infinite;\n          -webkit-animation: typedjsBlink 0.7s infinite;\n                  animation: typedjsBlink 0.7s infinite;\n        }\n        @keyframes typedjsBlink{\n          50% { opacity: 0.0; }\n        }\n        @-webkit-keyframes typedjsBlink{\n          0% { opacity: 1; }\n          50% { opacity: 0.0; }\n          100% { opacity: 1; }\n        }\n      ';
                             }
                             if (self.fadeOut) {
                                 innerCss += '\n        .typed-fade-out{\n          opacity: 0;\n          transition: opacity .25s;\n          -webkit-animation: 0;\n                  animation: 0;\n        }\n      ';
