@@ -18,7 +18,8 @@
 
     </head>
 <body>
-<link rel="icon" type="image/png" href="resources/page_icon.ico">
+<link rel="icon" type="image/png" href="resources/page_icon.png">
+
 <div class="top-container text-center padding-0 center-block">
 
     <div class="navbarr">
@@ -42,6 +43,9 @@
     <div class="row-sm-1 bottom-left-text">
         <span id="typed" class="left-text-style"></span>
     </div>
+    <div class="row-sm-1-resp bottom-left-text">
+        <span id="typed-resp" class="left-text-style"></span>
+    </div>
     <footer class="footer">
         <div class="copyright-text">
             <p class="paragraph-text text-style text-right copyright-text">© 2020 Alessandro Ruzzi All Rights Reserved</p>
@@ -50,6 +54,16 @@
     <script>
         var typed = new Typed('#typed', {
             strings: ['I get emotional when CS meets Neuroscience.', 'I believe AI will deeply change the world.', 'I love to work on meaningful tech problems.'],
+            typeSpeed: 60,
+            backSpeed: 60,
+            cursorChar: '_',
+            smartBackspace: false,
+            loop: true,
+        });
+    </script>
+    <script>
+        var typed = new Typed('#typed-resp', {
+            strings: ['Software Engineer','Future ML engineer'],
             typeSpeed: 60,
             backSpeed: 60,
             cursorChar: '_',

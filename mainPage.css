@@ -48,7 +48,7 @@ a {
     padding-right:0px;
     position: absolute;
     top: 2.3%;
-    right: -23%;
+    right: 0;
     transition: .5s;
 }
 
@@ -72,33 +72,57 @@ a {
 
 .navbarr ul li.list {
     position: fixed;
-    top:3%;
+    top:2.5%;
     right: 0;
     text-align: right;
-    display: none;}
+    display: none;
+}
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:1650px) {
+@media screen and (max-width:1200px) {
     .navbarr ul.topnav li {display: none;}
     .navbarr ul.topnav li.list {
         float: right;
         display: inline-block;
     }
+
+
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:1650px) {
+@media screen and (max-width:1200px) {
     .navbarr ul.topnav.responsive li.list{
         position: fixed;
         padding: 10px 30px;
-        top:3%;
+        top:2.5%;
         right:92px;
     }
 
-
-
     body{
         overflow: hidden;
+    }
+
+
+    #typed-resp{
+        position: fixed;
+        top: 50%;
+        left:25%;
+        display: inline-flex;
+        color: #E5E9EC ;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        letter-spacing: 1.5px ;
+        font-weight: 200 ;
+        font-size: 2.3vh;
+        word-spacing: 1px;
+    }
+
+
+    .row-sm-1 .left-text-style{
+        display: none;
+    }
+
+    .copyright-text .paragraph-text{
+        font-size: 2.0vh;
     }
 
     .navbarr ul.topnav.responsive li {
@@ -106,13 +130,14 @@ a {
         float: none;
         display:flex;
     }
+
     .navbarr ul.topnav.responsive li a {
         display: block;
         text-align: right;
     }
 
-    .row-sm-1.bottom-left-text{
-        display: none;
+    #typed-strings{
+        font-size: 2.0vh;
     }
 
     .navbarr ul.topnav{
@@ -164,13 +189,11 @@ a {
     height: 100vh;
     background: #252525;
     background-image: url("resources/background.jpg");
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: right;
     padding: 80px 70px;
-    text-align: center;
-
 }
 
 a.btn_down{
@@ -206,22 +229,26 @@ a.btn_down:hover{
     left:33%;
 }
 
+.row-sm-1-resp .left-text-style{
+    display: none;
+}
+
 .top-left-text{
-    color: #ffffff !important;
-    letter-spacing: 1.5px !important;
-    font-size: 40px !important;
-    font-weight: 200 !important;
-    word-spacing: 1px !important;
+    color: #ffffff;
+    letter-spacing: 1.5px ;
+    font-size: 40px ;
+    font-weight: 200 ;
+    word-spacing: 1px ;
 
 }
 
-.left-text-style, #typed-strings {
-    color: #E5E9EC !important;
-    font-family: 'IBM Plex Sans Condensed', sans-serif !important;
-    letter-spacing: 1.5px !important;
-    font-size: 30px !important;
-    font-weight: 200 !important;
-    word-spacing: 1px !important;
+.left-text-style, #typed-strings{
+    color: #E5E9EC ;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    letter-spacing: 1.5px ;
+    font-size: 30px;
+    font-weight: 200 ;
+    word-spacing: 1px;
 }
 
 
@@ -691,7 +718,7 @@ a.btn_down:hover{
     transform: scale(1.1);
 }
 
-.footer {
+.footer{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -713,10 +740,10 @@ a.btn_down:hover{
 .copyright-text {
     font-family: Helvetica;
     position: fixed;
-    top: 96.5%;
-    left: 79%;
+    bottom: 20px;
+    right: 25px;
     color:#aaaaaa;
     font-weight: 200;
-    font-size: 100%;
+    font-size: 1.3vh;
     opacity: 1;
 }
