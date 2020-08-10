@@ -59,7 +59,10 @@ a {
 
 .header__logo {
     font-family: Helvetica;
-    font-size: 2.3em;
+    position: fixed;
+    top: 28px;
+    left:22px;
+    font-size: 3.5vh;
     font-weight: 900;
     letter-spacing: -1px;
 }
@@ -94,11 +97,11 @@ a {
 .copyright-text {
     font-family: Helvetica;
     position: fixed;
-    top: 95%;
-    left: 79%;
+    bottom: 20px;
+    right: 25px;
     color:#aaaaaa;
     font-weight: 200;
-    font-size: 100%;
+    font-size: 1.3vh;
     opacity: 1;
 }
 
