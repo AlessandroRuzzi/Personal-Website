@@ -97,7 +97,7 @@ a {
 .copyright-text {
     font-family: Helvetica;
     position: fixed;
-    bottom: 20px;
+    bottom: 8px;
     right: 25px;
     color:#aaaaaa;
     font-weight: 200;
@@ -132,14 +132,13 @@ a {
     position:absolute;
     top:3%;
     left:2%;
-    display:-webkit-box;
-    display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row nowrap;-moz-box-orient:horizontal;-moz-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-moz-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:end;-webkit-align-items:flex-end;-moz-box-align:end;-ms-flex-align:end;align-items:flex-end;width:100%;text-align:left;overflow:hidden;z-index:0}
+    display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row nowrap;-moz-box-orient:horizontal;-moz-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-moz-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:end;-webkit-align-items:flex-end;-moz-box-align:end;-ms-flex-align:end;align-items:flex-end;text-align:left;z-index:0}
 
 .tematik_trombinoscope-image
 {
     position:absolute;
     top: 0%;
-    left: 14%;
+    left: 80%;
     -webkit-box-flex:0;
     -webkit-flex:0 0 auto;
     -moz-box-flex:0;
@@ -167,7 +166,7 @@ a {
 
 .social-container {
     position: absolute;
-    top:25%;
+    top:23%;
     left:72.5%;
     width: 400px;
     margin: 40vh auto;
@@ -254,3 +253,326 @@ a {
     display: flex;
     background-color: dodgerblue;
 }
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:400px) and (max-height:700px) and (min-height:600px)  {
+    .navbarr ul.topnav li {display: none;}
+    .navbarr ul.topnav li.list {
+        float: right;
+        display: inline-block;
+    }
+
+
+}
+
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:1400px) and (max-height:1100px)  and (min-width:400px) and (min-height:400px) {
+
+    .text-about{
+        text-align: justify;
+        padding-left: 20%;
+        padding-right: 20%;
+        position: fixed;
+        top: 20%;
+        left: 28%;
+        font-family: Helvetica;
+        font-size: 75%;
+    }
+
+    .social-container {
+        position: absolute;
+        top:23%;
+        left:55%;
+        width: 400px;
+        margin: 40vh auto;
+        text-align:right;
+    }
+
+    .social-icons {
+        padding: 0;
+        list-style: none;
+        margin: 1em;
+        display: flex;
+    }
+    .social-icons li {
+        display: inline-block;
+        padding: 2.5%;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+    }
+    .social-icons i {
+        color: #fff;
+        position: absolute;
+        top: 31px;
+        left: 31px;
+        transition: all 265ms ease-out;
+    }
+
+}
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:1800px) and (max-height:1100px)  and (min-width:1400px) and (min-height:400px) {
+
+    .text-about{
+        text-align: justify;
+        padding-left: 20%;
+        padding-right: 20%;
+        position: fixed;
+        top: 20%;
+        left: 28%;
+        font-family: Helvetica;
+        font-size: 85%;
+    }
+
+    .social-container {
+        position: absolute;
+        top:23%;
+        left:67%;
+        width: 400px;
+        margin: 40vh auto;
+        text-align:right;
+    }
+
+    .social-icons {
+        padding: 0;
+        list-style: none;
+        margin: 1em;
+        display: flex;
+    }
+    .social-icons li {
+        display: inline-block;
+        padding: 2.5%;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+    }
+    .social-icons i {
+        color: #fff;
+        position: absolute;
+        top: 31px;
+        left: 31px;
+        transition: all 265ms ease-out;
+    }
+
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:800px)  {
+
+    .text-about
+    {
+        display: none;
+    }
+
+    .social-icons a:before {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        content: " ";
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: block;
+        background: linear-gradient(45deg, #00b5f5, #002a8f);
+        transition: all 265ms ease-out;
+    }
+
+    .social-container {
+        position: absolute;
+        top:20%;
+        left:0%;
+        width: 400px;
+        margin: 40vh auto;
+        text-align:right;
+    }
+
+    .social-icons li {
+        display: inline-block;
+        padding: 2.5%;
+        margin: 0.10em;
+        position: relative;
+        font-size: 1.2em;
+    }
+    .social-icons i {
+        color: #fff;
+        position: absolute;
+        top: 21px;
+        left: 23px;
+        transition: all 265ms ease-out;
+    }
+
+    #box{
+        position: absolute;
+        top: 11.5%;
+        left: 19.5%;
+        width:75%;
+        height:70%;
+        margin:10px;
+        padding:10px;
+
+    }
+
+    .tematik_trombinoscope {
+        position: absolute;
+        top: 0%;
+        left: 2%;
+    }
+
+    .tematik_trombinoscope-image {
+        position: absolute;
+        top: 80%;
+        left: -30%;
+    }
+
+}
+@media screen and (max-height:400px)  {
+
+    .text-about
+    {
+        display: none;
+    }
+
+    .social-container {
+        position: absolute;
+        top:-17%;
+        left:60%;
+        width: 400px;
+        margin: 40vh auto;
+        text-align:right;
+    }
+
+}
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen  and (min-width:800px) and (max-width:1200px) {
+
+    .text-about{
+        text-align: justify;
+        padding-left: 20%;
+        padding-right: 20%;
+        position: fixed;
+        top: 20%;
+        left: 28%;
+        font-family: Helvetica;
+        font-size: 70%;
+    }
+
+    .social-container {
+        position: absolute;
+        top:23%;
+        left:40%;
+        width: 400px;
+        margin: 40vh auto;
+        text-align:right;
+    }
+
+    .social-icons {
+        padding: 0;
+        list-style: none;
+        margin: 1em;
+        display: flex;
+    }
+    .social-icons li {
+        display: inline-block;
+        padding: 2.5%;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+    }
+    .social-icons i {
+        color: #fff;
+        position: absolute;
+        top: 31px;
+        left: 31px;
+        transition: all 265ms ease-out;
+    }
+
+    .tematik_trombinoscope {
+        position: absolute;
+        top: 0%;
+        left: 2%;
+    }
+
+    .tematik_trombinoscope-image {
+        position: absolute;
+        top: 80%;
+        left: -30%;
+    }
+
+}
+
+
+
+
+
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (min-width:900px) and (max-width:1200px) and (min-height:1100px) and (max-height:1500px)  {
+    .text-about{
+        text-align: justify;
+        padding-left: 20%;
+        padding-right: 45%;
+        position: fixed;
+        top: 19%;
+        left: -10%;
+        font-family: Helvetica;
+        font-size: 110%;
+    }
+
+    .social-icons a:before {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        content: " ";
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        display: block;
+        background: linear-gradient(45deg, #00b5f5, #002a8f);
+        transition: all 265ms ease-out;
+    }
+
+    .social-container {
+        position: absolute;
+        top:27%;
+        left:48%;
+        width: 400px;
+        margin: 40vh auto;
+        text-align:right;
+    }
+
+    .social-icons {
+        padding: 0;
+        list-style: none;
+        margin: 1em;
+        display: flex;
+    }
+    .social-icons li {
+        display: inline-block;
+        padding: 2.5%;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.8em;
+    }
+    .social-icons i {
+        color: #fff;
+        position: absolute;
+        top: 31px;
+        left: 35px;
+        transition: all 265ms ease-out;
+    }
+
+    .tematik_trombinoscope-image {
+        position: absolute;
+        top:5%;
+        left: 80%;
+    }
+
+
+}
+
+
