@@ -3,8 +3,8 @@ My first work with html,css and js.
 
 ### To Do List:
 
-- [ ] Responsive Design home page,insert something in the middle of the screen
-- [ ] better graphics for side menu
+- [x] Responsive Design home page,insert something in the middle of the screen
+- [x] better graphics for side menu
 - [ ] Responsive Design portfolio
 - [ ] Responsive Design About
 - [ ] Responsive Design Contact
